@@ -212,10 +212,7 @@ Vue.component('chordbook-app', {
       return val === 0 ? '' : ` (transpose ${val > 0 ? '+' : ''}${val})`
     },
   },
-  template: `<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="navbar-brand">dtinth’s interactive chordbook <small class="text-muted" v-if="devMode">dev mode</small></span>
-    </nav>
+  template: `<div>   
     <div class="container py-4">
       <h1 class="h4">{{ song.title }}</h1>
       <p>Key: <select v-model="selectedKey" class="custom-select d-inline-block" style="width: 5em;">
