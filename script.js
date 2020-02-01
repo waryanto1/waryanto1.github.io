@@ -213,8 +213,7 @@ Vue.component('chordbook-app', {
     },
   },
   template: `<div>   
-    <div class="container py-4">
-      <h1 class="h4">{{ song.title }}</h1>
+    <div class="container py-4">   
       <p>Key: <select v-model="selectedKey" class="custom-select d-inline-block" style="width: 5em;">
         <option v-for="key of availableKeys" :value="key">{{key}} {{ song.scale.key.name === key ? '[*]' : '' }}</option>
       </select> {{ song.scale.name }} <span class="text-muted">{{ transpose }}</span></p>
