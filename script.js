@@ -260,7 +260,7 @@ Vue.component('options-panel', {
       this.options.autoScrollRate += t
     },
   },
-  template: `<div style="position:fixed;top:0;right:0px;background:#ccc;" class="p-2">
+  template: `<div style="position:fixed;top:0;right:100px;background:#ccc;" class="p-2">
     <div class="text-right">
       <button class="btn btn-outline-secondary" @click="toggle">🛠</button>
     </div>
