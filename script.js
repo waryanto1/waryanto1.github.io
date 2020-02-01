@@ -216,7 +216,8 @@ Vue.component('chordbook-app', {
     <div class="container py-4">   
       <p>Key: <select v-model="selectedKey" class="custom-select d-inline-block" style="width: 5em;">
         <option v-for="key of availableKeys" :value="key">{{key}} {{ song.scale.key.name === key ? '[*]' : '' }}</option>
-      </select> {{ song.scale.name }} <span class="text-muted">{{ transpose }}</span></p>
+      </select> {{ song.scale.name }} <span class="text-muted">{{ 
+se }}</span></p>
       <template v-if="song.youtubeId">
         <div class="video-player">
           <youtube :video-id="song.youtubeId" ref="youtube" @ready="onReady" player-width="320" player-height="180"></youtube>
@@ -259,7 +260,7 @@ Vue.component('options-panel', {
       this.options.autoScrollRate += t
     },
   },
-  template: `<div style="position:fixed;top:0;right:20px;background:#ccc;" class="p-2">
+  template: `<div style="position:fixed;top:0;right:0px;background:#ccc;" class="p-2">
     <div class="text-right">
       <button class="btn btn-outline-secondary" @click="toggle">🛠</button>
     </div>
